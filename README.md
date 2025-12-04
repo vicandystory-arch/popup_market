@@ -24,7 +24,7 @@ React + TypeScript + Vite 기반의 팝업 마켓 프로젝트입니다.
 프로젝트 루트에 `.env` 파일을 생성하고 다음 내용을 추가하세요:
 
 ```env
-VITE_SUPABASE_URL=https://ligyydeuxylahaimujjx.supabase.co
+VITE_SUPABASE_URL=https://oaypyevjwtfoualfmjwq.supabase.co
 VITE_SUPABASE_ANON_KEY=your_anon_key_here
 ```
 
@@ -51,21 +51,24 @@ npm run dev
 npm run build
 ```
 
-## 📦 GitHub 저장소 설정
+## 📦 배포
 
-이 프로젝트는 GitHub에 연결되어 있습니다.
+### Vercel 배포
 
-### 저장소 연결
+1. Vercel 대시보드에서 GitHub 저장소 연결
+2. **환경 변수 설정** (필수):
+   - `VITE_SUPABASE_URL`: Supabase 프로젝트 URL
+   - `VITE_SUPABASE_ANON_KEY`: Supabase Anonymous Key
+3. Deploy 클릭
 
-```bash
-git remote add origin https://github.com/vicandystory-arch/popup_market.git
-git branch -M main
-git push -u origin main
-```
+자세한 배포 가이드는 [.github/VERCEL_ENV_SETUP.md](.github/VERCEL_ENV_SETUP.md)를 참고하세요.
 
-### 배포
+### 환경 변수 오류 해결
 
-프로젝트는 Vercel, Netlify 등의 플랫폼에 배포할 수 있습니다.
+배포 후 "supabaseKey is required" 에러가 발생하면:
+1. Vercel 대시보드 > Settings > Environment Variables 확인
+2. `VITE_SUPABASE_URL`과 `VITE_SUPABASE_ANON_KEY` 설정 확인
+3. 재배포 (Redeploy) 실행
 
 ---
 
