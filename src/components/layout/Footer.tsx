@@ -32,7 +32,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2024 팝업 마켓. All rights reserved.</p>
+          <p>2025 팝업 마켓 플랫폼. All rights reserved.</p>
         </div>
       </div>
     </footer>
