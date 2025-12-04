@@ -29,7 +29,12 @@ export function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-xl sm:text-2xl font-bold text-gray-900 hover:text-gray-700">
+          <Link to="/" className="flex items-center gap-2 text-xl sm:text-2xl font-bold text-gray-900 hover:text-gray-700">
+            <img 
+              src="/logo.png" 
+              alt="팝업 마켓 로고" 
+              className="h-8 w-8 sm:h-10 sm:w-10"
+            />
             팝업 마켓
           </Link>
           
