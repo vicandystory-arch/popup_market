@@ -1,0 +1,209 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": "1",
+        "title": "Phase 1: Supabase 프로젝트 설정 및 데이터베이스 스키마 설계",
+        "description": "PRD 섹션 3.1을 참고하여 Supabase 프로젝트를 설정하고 데이터베이스 스키마를 설계합니다. profiles, popup_stores, reviews, favorites 테이블을 생성하고 RLS 정책을 설정합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [],
+        "priority": "medium",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T12:22:53.300Z"
+      },
+      {
+        "id": "2",
+        "title": "Phase 1: 사용자 인증 시스템 구현",
+        "description": "PRD 섹션 2.3을 참고하여 Supabase Auth를 사용하여 이메일/비밀번호 회원가입, 로그인, 로그아웃 기능을 구현합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "1"
+        ],
+        "priority": "high",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T12:29:23.629Z"
+      },
+      {
+        "id": "3",
+        "title": "Phase 1: 프로필 관리 기능 구현",
+        "description": "사용자 프로필 정보 조회/수정 기능을 구현합니다. 사용자명, 아바타 이미지, 역할 관리 기능을 포함합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "2"
+        ],
+        "priority": "high",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T12:31:27.470Z"
+      },
+      {
+        "id": "4",
+        "title": "Phase 1: 기본 레이아웃 및 네비게이션 구성",
+        "description": "React Router를 설정하고 기본 레이아웃 컴포넌트를 생성합니다. 헤더, 네비게이션, 푸터를 포함한 반응형 레이아웃을 구현합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "2"
+        ],
+        "priority": "medium",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T12:41:51.643Z"
+      },
+      {
+        "id": "5",
+        "title": "Phase 2: 팝업 스토어 목록 페이지 구현",
+        "description": "PRD 섹션 2.1을 참고하여 팝업 스토어 목록을 표시하는 페이지를 구현합니다. 카드 형태의 스토어 목록, 페이지네이션, 로딩 상태를 포함합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "1"
+        ],
+        "priority": "high",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T12:43:32.393Z"
+      },
+      {
+        "id": "6",
+        "title": "Phase 2: 검색 및 필터링 기능 구현",
+        "description": "PRD 섹션 2.1을 참고하여 지역별/카테고리별 목록, 검색(이름, 위치, 태그), 필터링(날짜, 카테고리, 지역, 상태), 정렬(최신순, 인기순, 거리순) 기능을 구현합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "5"
+        ],
+        "priority": "high",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T12:45:00.479Z"
+      },
+      {
+        "id": "7",
+        "title": "Phase 2: 반응형 디자인 적용",
+        "description": "모바일 우선 반응형 디자인을 적용하여 모든 페이지가 다양한 화면 크기에서 잘 작동하도록 합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "5"
+        ],
+        "priority": "medium",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T13:27:34.187Z"
+      },
+      {
+        "id": "8",
+        "title": "Phase 2: 팝업 스토어 상세 페이지 구현",
+        "description": "PRD 섹션 2.2를 참고하여 개별 스토어의 상세 정보를 표시하는 페이지를 구현합니다. 스토어 정보, 이미지 갤러리, 운영 시간, 위치 정보, 연락처, 리뷰 및 평점을 포함합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "5"
+        ],
+        "priority": "high",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T12:46:29.614Z"
+      },
+      {
+        "id": "9",
+        "title": "Phase 3: 이미지 업로드 기능 구현",
+        "description": "PRD 섹션 2.4를 참고하여 Supabase Storage를 사용하여 스토어 이미지를 업로드하고 관리하는 기능을 구현합니다. 다중 이미지 업로드, 이미지 미리보기, 이미지 삭제, 최대 이미지 개수 제한을 포함합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "2"
+        ],
+        "priority": "high",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T13:15:25.241Z"
+      },
+      {
+        "id": "10",
+        "title": "Phase 3: 스토어 등록 폼 구현",
+        "description": "PRD 섹션 2.4를 참고하여 판매자가 팝업 스토어를 등록할 수 있는 폼을 구현합니다. 기본 정보 입력, 운영 기간/시간 설정, 연락처 정보, 태그 입력을 포함합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "9"
+        ],
+        "priority": "high",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T13:17:30.630Z"
+      },
+      {
+        "id": "11",
+        "title": "Phase 3: 스토어 정보 수정 기능 구현",
+        "description": "판매자가 등록한 스토어의 정보를 수정할 수 있는 기능을 구현합니다. RLS 정책을 통해 판매자만 자신의 스토어를 수정할 수 있도록 합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "2"
+        ],
+        "priority": "high",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T13:22:12.734Z"
+      },
+      {
+        "id": "12",
+        "title": "Phase 4: 리뷰 및 평점 시스템 구현",
+        "description": "PRD 섹션 2.5를 참고하여 스토어에 대한 리뷰 작성 및 평점 부여 기능을 구현합니다. 리뷰 작성 폼, 리뷰 목록 표시, 평점 평균 계산, 평점별 필터링을 포함합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "7"
+        ],
+        "priority": "medium",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T13:23:11.021Z"
+      },
+      {
+        "id": "13",
+        "title": "Phase 4: 즐겨찾기 기능 구현",
+        "description": "PRD 섹션 2.3을 참고하여 사용자가 스토어를 즐겨찾기에 추가하고 관리하는 기능을 구현합니다. 즐겨찾기 추가/제거, 즐겨찾기 목록 조회를 포함합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "7"
+        ],
+        "priority": "medium",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T13:25:02.779Z"
+      },
+      {
+        "id": "14",
+        "title": "Phase 4: 지도 통합 (Google Maps 또는 Kakao Map)",
+        "description": "PRD 섹션 2.2를 참고하여 스토어 상세 페이지에 지도 기능을 통합합니다. 스토어 위치를 지도에 표시하고, 지도 API 키 관리 및 비용을 고려합니다.",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [
+          "7"
+        ],
+        "priority": "medium",
+        "subtasks": [],
+        "updatedAt": "2025-12-02T13:29:35.036Z"
+      }
+    ],
+    "metadata": {
+      "version": "1.0.0",
+      "lastModified": "2025-12-02T13:29:35.036Z",
+      "taskCount": 14,
+      "completedCount": 14,
+      "tags": [
+        "master"
+      ]
+    }
+  }
+}
